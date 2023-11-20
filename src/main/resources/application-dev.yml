@@ -1,3 +1,10 @@
 
 server:
   port: 11111
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    

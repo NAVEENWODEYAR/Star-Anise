@@ -1,0 +1,10 @@
+
+server:
+  port: 22222
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    

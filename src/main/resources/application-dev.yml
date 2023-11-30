@@ -1,6 +1,6 @@
 
 server:
-  port: 11111
+  port: 1111
   
 management:
   endpoints:

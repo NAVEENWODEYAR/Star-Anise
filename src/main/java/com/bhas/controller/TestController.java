@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/bhaskara")
 public class TestController
 {
 	@GetMapping("/test")
@@ -23,8 +22,8 @@ public class TestController
 		return "Hello Welcome to Bhaskara Application,";
 	}
 	
-//	@GetMapping("/today")
-	@RequestMapping(name = "today",method = RequestMethod.GET)
+	@GetMapping("/today")
+//	@RequestMapping(name = "today",method = RequestMethod.GET)
 	public ResponseEntity<LocalDateTime> getDate()
 	{
 		return new ResponseEntity<>(LocalDateTime.now(), HttpStatus.OK);

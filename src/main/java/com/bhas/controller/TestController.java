@@ -18,7 +18,7 @@ public class TestController
 	@ResponseStatus(code = HttpStatus.CONTINUE)
 	public String greetMsg()
 	{
-		System.out.println("\n*********");
+		System.out.println("*********");
 		return "Hello Welcome to Bhaskara Application,";
 	}
 	

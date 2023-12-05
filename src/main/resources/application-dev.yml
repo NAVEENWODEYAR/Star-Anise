@@ -10,13 +10,14 @@ management:
 
 spring:
   datasource:
-    driver-class-name: 
-    url: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bhaskaradb?createDatabaseIfNotExit=true
     username: 
     password: 
   jpa:
     database: mysql
     show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     generate-ddl: true
     hibernate:
       ddl-auto: create-drop

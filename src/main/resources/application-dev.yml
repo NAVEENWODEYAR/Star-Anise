@@ -7,4 +7,18 @@ management:
     web:
       exposure:
         include: "*"
+
+spring:
+  datasource:
+    driver-class-name: 
+    url: 
+    username: 
+    password: 
+  jpa:
+    database: mysql
+    show-sql: false
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    
     

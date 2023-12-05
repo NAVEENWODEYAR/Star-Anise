@@ -11,9 +11,9 @@ management:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bhaskaradb?createDatabaseIfNotExit=true
-    username: 
-    password: 
+    url: jdbc:mysql://localhost:3306/bhaskaradb?createDatabaseIfNotExist=true
+    username: root
+    password: boss
   jpa:
     database: mysql
     show-sql: false

@@ -9,6 +9,7 @@ public class PaymentUtils
 {
 	private static Map<String, Double> paymentMap = new HashMap<>();
 	
+	static
 	{
 		paymentMap.put("ac1", 10000.00);
 		paymentMap.put("ac2", 15000.00);

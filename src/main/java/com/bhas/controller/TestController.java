@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +19,7 @@ import com.bhas.service.FlightBookingService;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
+
 @RestController
 public class TestController
 {
@@ -25,7 +27,7 @@ public class TestController
 	private FlightBookingService service;
 	
 	@GetMapping("/test")
-	@ResponseStatus(code = HttpStatus.CONTINUE)
+	@ResponseStatus(code = HttpStatus.BANDWIDTH_LIMIT_EXCEEDED)
 	public String greetMsg()
 	{
 		System.out.println("*********");

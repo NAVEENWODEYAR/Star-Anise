@@ -15,7 +15,7 @@ public class PaymentUtils
 		paymentMap.put("ac2", 15000.00);
 		paymentMap.put("ac3", 25000.00);
 		paymentMap.put("ac4", 5000.00);
-		paymentMap.put("ac5", 100000.00);
+		paymentMap.put("ac5", 200000.00);
 	}
 	
 	public static boolean validateCreditLimit(String accNo,double paidAmount)

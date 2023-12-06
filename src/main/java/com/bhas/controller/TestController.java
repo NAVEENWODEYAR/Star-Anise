@@ -22,7 +22,7 @@ public class TestController
 	private FlightBookingService service;
 	
 	@GetMapping("/test")
-	@ResponseStatus(code = HttpStatus.CONTINUE)
+	@ResponseStatus(code = HttpStatus.BANDWIDTH_LIMIT_EXCEEDED)
 	public String greetMsg()
 	{
 		System.out.println("*********");
